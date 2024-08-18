@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendu Game</title>
+    <link href="style.css" rel="stylesheet" type="text/css" >
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="script.js"></script>
+	<script src="Themes.js"></script>
+
+</head>
+<body onload="Load_Game()">
+    <div class="container">
+      <h1> Jeu Du Pendu </h1>
+      <p> Tentez de deviner le mot secret en entrant des lettres une par une au clavier.
+        Ne gaspillez pas vos coups, car si trop de vos choix sont erronés vous tuerez le pendu et vous perdrez la partie.
+      </p>
+	  
+	  <div class="container">
+        <label for="theme-select">Choisir un thème:</label>
+        <select id="theme-select" onchange="changeTheme(this.value)">
+			<option value="">Sélectionner un thème</option>
+            <option value="animals">Animaux</option>
+            <option value="fruits">Fruits</option>
+            <option value="countries">Pays</option>
+			<option value="cities">Villes</option>
+			<option value="professions">Professions</option>
+			<option value="movies">Films</option>
+        </select>
+    </div>
+    <div id="alphabet-buttons-container">
+	</div>
+	<div class= "containerSvg">
+	<div>
+    <svg  id="hangman-svg" width="150" height="250" >
+        <svg id="0" class="svg">
+        <line x1="20" y1="300" x2="180" y2="240" stroke="black" stroke-width="5" />
+        <line x1="50" y1="20" x2="50" y2="240" stroke="black" stroke-width="5" />
+        <line x1="50" y1="20" x2="100" y2="20" stroke="black" stroke-width="5" />
+		</svg>
+        <circle cx="100" cy="50" r="30" stroke="black" stroke-width="3" fill="white" id="1" class="svg"/>
+        
+        <line x1="100" y1="80" x2="100" y2="150" stroke="black" stroke-width="3" id="2" class="svg"/>
+        
+        <line x1="100" y1="100" x2="70" y2="120" stroke="black" stroke-width="3" id="3" class="svg"/>
+        
+        <line x1="100" y1="100" x2="130" y2="120" stroke="black" stroke-width="3" id="4" class="svg"/>
+        
+        <line x1="100" y1="150" x2="80" y2="180" stroke="black" stroke-width="3" id="5" class="svg"/>
+        
+        <!-- Right Leg -->
+        <line x1="100" y1="150" x2="120" y2="180" stroke="black" stroke-width="3" id="6" class="svg"/>
+    </svg>
+	</div>
+
+    <div class="container">
+	  <div>
+	  <div id="word-display"></div>
+      <button id="Change_Word" onclick="changeTheWord()">  Changer le mot </button>
+	  </div>
+	  <div > <p id="hint-display"> </p> </div>
+    </div>
+	</div>
+	<div>
+          <h1 id="message"></h1>
+    </div>
+		<div id="AddName"></div>   
+    <div id="TableBest10"></div>
+    </div>
+    </div>
+</body>
+</html>

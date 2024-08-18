@@ -1,0 +1,160 @@
+body {
+	background-image: url('logo.jpeg');
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+	opacity: 0.95;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.containerSvg {
+  display: flex;
+  flex-direction: row;
+}
+
+h1 {
+  color: #fd4b48;
+  font-size: 80px;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 10px;
+}
+
+p {
+    color: #333;
+	font-size: 24px;
+}
+
+#alphabet-buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.alphabet-button {
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid blue;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+
+.alphabet-button:hover {
+    background-color: #aaa; 
+    color: #fff; 
+}
+
+
+
+#word-display {
+    margin-top: 20px;
+    font-size: 30px;
+    font-family: 'Courier New', monospace;
+}
+
+#word-display span {
+    display: inline-block;
+    width: 25px; /* Adjust the width based on your preference */
+    height: 30px; /* Adjust the height based on your preference */
+    text-align: center;
+    margin: 0 5px; /* Adjust the margin based on your preference */
+    font-size: 18px; /* Adjust the font size based on your preference */
+    border-bottom: 2px solid #333; /* Border for each letter */
+}
+
+.guessed {
+    color: #4285f4; /* Color for guessed letters */
+    font-weight: bold; /* Make guessed letters bold */
+}
+
+
+#Change_Word {
+    margin-top: 20px;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #34a853;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#Change_Word:hover {
+    background-color: #2e7d32;
+}
+
+#hangman-svg {
+    border: 2px solid black;
+    padding: 10px;
+    display: none;
+}
+
+.svg {
+    display: none;
+}
+
+#button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 20%;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+}
+
+#message {
+    font-size: 24px;
+    color: #ff1900;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#AddName {
+    margin-top: 20px;
+}
+
+#inputName {
+    padding: 10px;
+    width: 60%;
+}
+
+#TableBest10 {
+    margin-top: 20px;
+}
+
+table {
+    width: 80%;
+    font-size: 14px;
+    border-collapse: collapse;
+    margin-left: 10%;
+}
+
+#classement {
+    background-color: rgba(255, 255, 0, 0.2);
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+	font-size: 14px;
+}
+
+th {
+    background-color: #3498db;
+    color: #fff;
+}
